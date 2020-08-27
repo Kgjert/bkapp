@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: Olive; -fx-border-color: Green;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.BKcalc.BKController">
+   <children>
+      <Button fx:id="calculate" layoutX="405.0" layoutY="156.0" mnemonicParsing="false" onAction="#onCalculate" prefHeight="33.0" prefWidth="135.0" text="Calculate" />
+      <TextField fx:id="g1" alignment="TOP_LEFT" layoutX="138.0" layoutY="113.0" prefHeight="25.0" prefWidth="212.0" promptText="8point MGRS " />
+      <TextField fx:id="g2" layoutX="138.0" layoutY="194.0" prefHeight="25.0" prefWidth="212.0" promptText="8point MGRS" />
+      <Label fx:id="resultAz" layoutX="67.0" layoutY="287.0" prefHeight="83.0" prefWidth="123.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="resultDist" layoutX="300.0" layoutY="294.0" prefHeight="68.0" prefWidth="157.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Text layoutX="43.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Point1">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="43.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Point2">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="92.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Azimuth">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="302.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Distance">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="bk1" layoutX="129.0" layoutY="68.0" minWidth="42.0" mnemonicParsing="false" onAction="#changeBKOne" prefHeight="32.0" prefWidth="42.0" text="561" />
+      <Button fx:id="bk2" layoutX="203.0" layoutY="68.0" mnemonicParsing="false" onAction="#changeBKTwo" prefHeight="32.0" prefWidth="42.0" text="562" />
+      <Button fx:id="bk3" layoutX="272.0" layoutY="68.0" mnemonicParsing="false" onAction="#changeBKThree" prefHeight="32.0" prefWidth="42.0" text="563" />
+      <Button fx:id="bk4" layoutX="340.0" layoutY="68.0" mnemonicParsing="false" onAction="#changeBKFour" prefHeight="32.0" prefWidth="42.0" text="564" />
+      <Button fx:id="set1" layoutX="129.0" layoutY="27.0" minWidth="42.0" mnemonicParsing="false" onAction="#setBKOne" prefHeight="32.0" prefWidth="42.0" text="Set BK1">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Button>
+      <Button fx:id="set2" layoutX="203.0" layoutY="27.0" minWidth="42.0" mnemonicParsing="false" onAction="#setBKTwo" prefHeight="32.0" prefWidth="42.0" text="Set BK2">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Button>
+      <Button fx:id="set3" layoutX="273.0" layoutY="27.0" minWidth="42.0" mnemonicParsing="false" onAction="#setBKThree" prefHeight="32.0" prefWidth="42.0" text="Set BK3">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Button>
+      <Button fx:id="set4" layoutX="340.0" layoutY="27.0" minWidth="42.0" mnemonicParsing="false" onAction="#setBKFour" prefHeight="32.0" prefWidth="42.0" text="Set BK4">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</Pane>
